@@ -1,4 +1,4 @@
-package edu.uc.likeconnectionsapplication;
+package edu.uc.likeconnectionsapplication.dto;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
