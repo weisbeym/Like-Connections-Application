@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-import edu.uc.likeconnectionsapplication.dto.databaseHelper;
+import edu.uc.likeconnectionsapplication.dao.databaseHelper;
 
 public class MainActivity extends AppCompatActivity {
     databaseHelper myDB;
