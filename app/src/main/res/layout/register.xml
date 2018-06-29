@@ -9,7 +9,7 @@
         android:id="@+id/autoCompleteTextEmail"
         android:layout_width="379dp"
         android:layout_height="wrap_content"
-        android:text="Email"
+        android:text="@string/email"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="37dp" />
 
@@ -17,7 +17,7 @@
         android:id="@+id/autoCompleteTextUsername"
         android:layout_width="377dp"
         android:layout_height="wrap_content"
-        android:text="Username"
+        android:text="@string/username"
         tools:layout_editor_absoluteX="18dp"
         tools:layout_editor_absoluteY="97dp" />
 
@@ -25,7 +25,7 @@
         android:id="@+id/signUp"
         android:layout_width="196dp"
         android:layout_height="wrap_content"
-        android:text="Sign Up"
+        android:text="@string/signUp"
         tools:layout_editor_absoluteX="99dp"
         tools:layout_editor_absoluteY="226dp" />
 
@@ -33,7 +33,7 @@
         android:id="@+id/signIn"
         android:layout_width="155dp"
         android:layout_height="wrap_content"
-        android:text="Sign In"
+        android:text="@string/signIn"
         tools:layout_editor_absoluteX="128dp"
         tools:layout_editor_absoluteY="539dp" />
 
@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Have an account? Sign In!"
+        android:text="@string/haveAccount"
         tools:layout_editor_absoluteX="99dp"
         tools:layout_editor_absoluteY="477dp" />
 
@@ -53,7 +53,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPassword"
-        android:text="Password"
+        android:text="@string/pass"
         tools:layout_editor_absoluteX="21dp"
         tools:layout_editor_absoluteY="159dp" />
 

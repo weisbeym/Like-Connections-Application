@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:text="Search!"
+        android:text="@string/search"
         tools:layout_editor_absoluteX="107dp"
         tools:layout_editor_absoluteY="553dp" />
 
@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textMultiLine"
-        android:text="Brief Description"
+        android:text="@string/briefDescription"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="193dp" />
 
@@ -38,7 +38,7 @@
         android:id="@+id/tagAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Tags"
+        android:text="@string/addTags"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="443dp" />
 

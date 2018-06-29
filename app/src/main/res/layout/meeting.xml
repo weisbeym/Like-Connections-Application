@@ -9,7 +9,7 @@
         android:id="@+id/signUp"
         android:layout_width="wrap_content"
         android:layout_height="41dp"
-        android:text="Sign Up"
+        android:text="@string/signUp"
         tools:layout_editor_absoluteX="150dp"
         tools:layout_editor_absoluteY="560dp" />
 
@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Choose your time to schedule a meetup!"
+        android:text="@string/scheduleMeeting"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="1dp" />
 </android.support.constraint.RelativeLayout>
