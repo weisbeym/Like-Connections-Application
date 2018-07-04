@@ -1,9 +1,11 @@
 package edu.uc.likeconnectionsapplication.dto;
 
+import java.util.Set;
+
 /**
  *  A simple DTO that models a user.
  *  has the fields of userName, password, userID,
- *  emailAddress, and an array  of interests, to represent the user account.
+ *  emailAddress, and an HashSet of interests objects, to represent the user account.
  */
 
 public class User {
@@ -12,7 +14,7 @@ public class User {
     private String password;
     private int userID;
     private String emailAddress;
-    private String[] interests;
+    private Set<Interest> interests;
 
     public String getUserName() {
         return userName;
@@ -46,11 +48,11 @@ public class User {
         this.emailAddress = emailAddress;
     }
 
-    public String[] getInterests() {
+    public Set<Interest> getInterests() {
         return interests;
     }
 
-    public void setInterests(String[] interests) {
-        this.interests = interests;
+    public void setInterests(Interest interest) {
+        interests.add(interest);
     }
 }
