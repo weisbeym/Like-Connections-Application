@@ -8,8 +8,8 @@ public class databaseHelper extends SQLiteOpenHelper {
     public static final String DATABASE_NAME = "profile.db";
     public static final String TABLE_NAME ="profile_table";
     public static final String COL_1 ="ID";
-    public static final String COL_2 ="firstName";
-    public static final String COL_3 ="lastName";
+    public static final String COL_2 ="FirstName";
+    public static final String COL_3 ="LastName";
 
     public databaseHelper( Context context ) {
         super(context, DATABASE_NAME, null, 1);
