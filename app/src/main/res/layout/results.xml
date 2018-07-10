@@ -9,7 +9,7 @@
         android:id="@+id/filterResults"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Filter Results"
+        android:text="@string/filterResults"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="44dp" />
 

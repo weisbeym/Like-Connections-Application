@@ -1,4 +1,18 @@
 <resources>
     <string name="app_name">Like Connections Application</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="scheduleMeeting">Choose your time to schedule a meetup!</string>
+    <string name="signUp">Sign Up</string>
+    <string name="search">Search!</string>
+    <string name="briefDescription">Brief Description</string>
+    <string name="addTags">Add Tags</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+    <string name="signIn">Sign In</string>
+    <string name="haveAccount">Have an account? Sign In!</string>
+    <string name="pass">Password</string>
+    <string name="filterResults">Filter Results</string>
+    <string name="addInterest">Type your interest in!</string>
+    <string name="plus">+</string>
+    <string name="userEmail">Username/Email</string>
 </resources>
