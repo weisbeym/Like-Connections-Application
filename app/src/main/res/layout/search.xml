@@ -21,13 +21,6 @@
         android:layout_marginTop="85dp"
         android:text="Type your interest in!" />
 
-    <android.support.v7.widget.RecyclerView
-        android:layout_width="95dp"
-        android:layout_height="50dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="0dp" />
-
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
