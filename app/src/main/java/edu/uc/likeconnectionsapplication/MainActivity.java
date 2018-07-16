@@ -44,8 +44,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-<<<<<<< HEAD
-=======
+
     /*
     we inflate the menu in here, resource file
      */
@@ -77,5 +76,5 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
->>>>>>> vincenjg_pull
+
 }
