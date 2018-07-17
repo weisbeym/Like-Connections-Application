@@ -10,17 +10,10 @@ import edu.uc.likeconnectionsapplication.dto.User;
 public interface ISearchService {
 
     /**
-     * @param userName the name of user being searched for
-     * @return the user object the userName is associated with
+     * @param searchTerm the name of user being searched for or an interst
+     * @return the user object the userName is associated with or the users that have that interest
      * @throws Exception if there in an error or the user does not exist.
      */
-    public User getUserByUserName(String userName) throws Exception;
+    public User getUser(String searchTerm) throws Exception;
 
-    /**
-     * @param interest a string representing a specific interest or a field in one.
-     * Example: can search for football or sports(a category, see the javadoc in the Interest dto)
-     * @return users with that interest in their HashSet
-     * @throws Exception when there is no such interest, no users with that interest, or an error occurs.
-     */
-    public User getUserByInterest(String interest) throws Exception;
 }
