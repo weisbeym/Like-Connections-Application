@@ -14,6 +14,6 @@ public interface ISearchService {
      * @return the user object the userName is associated with or the users that have that interest
      * @throws Exception if there in an error or the user does not exist.
      */
-    public User getUser(String searchTerm) throws Exception;
+    public User SearchForUser(String searchTerm) throws Exception;
 
 }
