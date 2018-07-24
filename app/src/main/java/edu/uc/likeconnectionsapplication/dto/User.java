@@ -1,10 +1,10 @@
 package edu.uc.likeconnectionsapplication.dto;
 
-<<<<<<< HEAD
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
 
+/* Room DB as alternative
 @Entity(tableName = "users")
 public class User {
     @PrimaryKey
@@ -43,6 +43,8 @@ public class User {
     // Getters and setters are ignored for brevity,
     // but they're required for Room to work.
 =======
+
+*/
 import java.util.Set;
 
 /**
@@ -99,5 +101,5 @@ public class User {
     public void setInterests(Interest interest) {
         interests.add(interest);
     }
->>>>>>> f4b6ef42d12c2efd5f3abe3409a989cdb59a8b74
+
 }
