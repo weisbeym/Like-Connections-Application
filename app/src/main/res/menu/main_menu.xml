@@ -4,26 +4,26 @@
 
     <item
         android:id="@+id/menuSearch"
-        android:title="Search"
+        android:title="@string/search"
         app:showAsAction="never"/>
     <item
         android:id="@+id/menuSignin"
-        android:title="Sign In"
+        android:title="@string/sign_in"
         app:showAsAction="never"/>
     <item
         android:id="@+id/menuRegister"
-        android:title="Register"
+        android:title="@string/register"
         app:showAsAction="never" />
     <item
         android:id="@+id/menuProfile"
-        android:title="Profile"
+        android:title="@string/profile"
         app:showAsAction="never"/>
     <item
         android:id="@+id/menuSettings"
-        android:title="Settings"
+        android:title="@string/settings"
         app:showAsAction="never"/>
     <item
         android:id="@+id/menuAbout"
-        android:title="About"
+        android:title="@string/about"
         app:showAsAction="never"/>
 </menu>
