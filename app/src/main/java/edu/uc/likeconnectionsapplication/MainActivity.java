@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
     public Button btnRegister;
     public Button buttonSearch;
-
+    public Button buttonSignUp;
 
 //    public void register(View view){
 //        Intent goReg = new Intent(this, Register.class);
@@ -40,6 +40,15 @@ public class MainActivity extends AppCompatActivity {
         }
     });
 }
+
+    buttonSignUp = (Button) findViewById(R.id.btnSignUp);
+
+    buttonSignUp.setOnClickListener(new View.OnClickListener() {
+        public void onClick(View v) {
+            insertData();
+        }
+    });
+
 
 
     @Override
@@ -94,6 +103,7 @@ public class MainActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
         myDB = new databaseHelper(this);
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {

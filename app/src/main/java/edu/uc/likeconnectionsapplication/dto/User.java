@@ -40,8 +40,7 @@ public class User {
         this.lastName = lastName;
     }
 
-    // Getters and setters are ignored for brevity,
-    // but they're required for Room to work.
+
 =======
 
 */
