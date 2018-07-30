@@ -21,6 +21,22 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="search_an_interest">Search an Interest</string>
+    <string name="go">Go</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="todo">TODO</string>
+    <string name="description">Description</string>
+    <string name="viewtag">ViewTag</string>
+    <string name="sign_in">Sign In</string>
+    <string name="register">Register</string>
+    <string name="profile">Profile</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+    <string name="search">Search</string>
 
 
 </resources>

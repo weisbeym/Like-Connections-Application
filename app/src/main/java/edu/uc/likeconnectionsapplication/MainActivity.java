@@ -17,11 +17,12 @@ import android.widget.Toast;
 import edu.uc.likeconnectionsapplication.dao.databaseHelper;
 
 public class MainActivity extends AppCompatActivity {
+
     databaseHelper myDB;
 
     public Button btnRegister;
     public Button buttonSearch;
-
+    public Button buttonSignUp;
 
 //    public void register(View view){
 //        Intent goReg = new Intent(this, Register.class);
@@ -40,6 +41,15 @@ public class MainActivity extends AppCompatActivity {
         }
     });
 }
+
+    buttonSignUp = (Button) findViewById(R.id.btnSignUp);
+
+    buttonSignUp.setOnClickListener(new View.OnClickListener() {
+        public void onClick(View v) {
+            insertData();
+        }
+    });
+
 
 
     @Override
@@ -88,24 +98,32 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate( Bundle savedInstanceState ) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        myDB = new databaseHelper(this);
 
+        myDB = new databaseHelper(this);
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
+
+            /**
+             *
+             * @param view
+             */
             @Override
             public void onClick( View view ) {
+
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
         goRegister();
     }
+
     /*
     we inflate the menu in here, resource file
      */
