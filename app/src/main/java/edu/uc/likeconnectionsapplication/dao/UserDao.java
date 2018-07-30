@@ -9,7 +9,7 @@ import android.arch.persistence.room.Query;
 import java.util.List;
 
 import edu.uc.likeconnectionsapplication.dto.User;
-
+//My group has found success with Firebase for data storage. Could possibly be a better solution
 @Dao
 public interface UserDao {
     @Query("SELECT * FROM users")
