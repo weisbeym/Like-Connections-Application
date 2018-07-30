@@ -13,14 +13,13 @@
         android:id="@+id/autoCompleteTextView2"
         android:layout_width="0dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="5dp"
         android:layout_marginEnd="6dp"
         android:layout_marginStart="14dp"
         android:layout_marginTop="8dp"
+        android:hint="@string/search_an_interest"
         app:layout_constraintEnd_toStartOf="@+id/buttonSearch"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.038" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ListView
         android:id="@+id/searchList"
@@ -41,7 +40,7 @@
         android:layout_marginBottom="6dp"
         android:layout_marginEnd="8dp"
         android:layout_marginTop="8dp"
-        android:text="Go"
+        android:text="@string/go"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/autoCompleteTextView2"
         app:layout_constraintTop_toTopOf="parent" />

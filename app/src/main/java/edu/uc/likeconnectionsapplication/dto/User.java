@@ -51,14 +51,18 @@ import java.util.Set;
  *  has the fields of userName, password, userID,
  *  emailAddress, and an HashSet of interests objects, to represent the user account.
  */
-
+@Entity
 public class User {
 
-
+    @ColumnInfo (name = "userName")
     private String userName;
+    @ColumnInfo (name = "password")
     private String password;
+    @PrimaryKey (autoGenerate = true)
     private int userID;
+    @ColumnInfo (name = "emailAddress")
     private String emailAddress;
+    @ColumnInfo (name = "interests")
     private Set<Interest> interests;
 
     public String getUserName() {
