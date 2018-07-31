@@ -16,14 +16,14 @@ public interface UserDao {
     List<User> getAll();
 
     @Query("SELECT * FROM users WHERE uid IN (:userIds)")
-    List<User> loadAllByIds(int[] userIds);
+    List<User> loadAllByIds(int[] userIds) throws Exception;
 
     @Query("SELECT * FROM users WHERE first_name LIKE :first AND "
             + "last_name LIKE :last LIMIT 1")
-    User findByName(String first, String last);
+    User findByName(String userName) throws Exception;
 
     @Insert
-    void insertAll(User... users);
+    void insertAll(User... users) throws Exception;
 
     @Delete
     void delete(User user);
