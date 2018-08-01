@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
     public Button btnRegister;
     public Button buttonSearch;
     public Button buttonSignUp;
-
     //for recyclerView
     public RecyclerView recyclerView;
     public List<User> users = new ArrayList<>();
@@ -41,26 +40,25 @@ public class MainActivity extends AppCompatActivity {
 //        startActivity(goReg);
 //    }
 
-    public void goRegister(){
+    public void goRegister() {
+        buttonSignUp = (Button) findViewById(R.id.btnSignUp);
+        buttonSignUp.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                insertData();
+            }
+        });
 
-    buttonSearch = (Button)findViewById(R.id.buttonSearch);
-    buttonSearch.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
+        buttonSearch = (Button) findViewById(R.id.buttonSearch);
+        buttonSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-            Intent goRegister = new Intent(MainActivity.this, Register.class);
-            startActivity(goRegister);
-        }
-    });
-}
+                Intent goRegister = new Intent(MainActivity.this, Register.class);
+                startActivity(goRegister);
+            }
+        });
+    }
 
-    buttonSignUp = (Button) findViewById(R.id.btnSignUp);
-
-    buttonSignUp.setOnClickListener(new View.OnClickListener() {
-        public void onClick(View v) {
-            insertData();
-        }
-    });
 
 
 
