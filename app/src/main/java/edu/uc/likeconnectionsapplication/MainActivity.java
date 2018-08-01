@@ -44,7 +44,8 @@ public class MainActivity extends AppCompatActivity {
         buttonSignUp = (Button) findViewById(R.id.btnSignUp);
         buttonSignUp.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                insertData();
+                //to be made
+                //insertData();
             }
         });
 
