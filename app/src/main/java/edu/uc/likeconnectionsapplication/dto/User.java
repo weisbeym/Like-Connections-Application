@@ -54,6 +54,8 @@ import java.util.Set;
 @Entity
 public class User {
 
+    // TODO fix coverter problem for this because of SQLlite
+
     @ColumnInfo (name = "userName")
     private String userName;
     @ColumnInfo (name = "password")

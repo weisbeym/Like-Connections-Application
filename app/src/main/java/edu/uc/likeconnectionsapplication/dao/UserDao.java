@@ -9,7 +9,11 @@ import android.arch.persistence.room.Query;
 import java.util.List;
 
 import edu.uc.likeconnectionsapplication.dto.User;
-//My group has found success with Firebase for data storage. Could possibly be a better solution
+
+// TODO fix these
+// TODO errors error: There is a problem with the query: [SQLITE_ERROR] SQL error or missing database (no such table: users)
+// TODO error: There is a problem with the query: [SQLITE_ERROR] SQL error or missing database (no such table: users)
+
 @Dao
 public interface UserDao {
     @Query("SELECT * FROM users")
