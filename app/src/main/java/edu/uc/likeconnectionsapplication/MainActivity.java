@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -14,7 +16,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import edu.uc.likeconnectionsapplication.dao.databaseHelper;
+import edu.uc.likeconnectionsapplication.dto.User;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,6 +29,12 @@ public class MainActivity extends AppCompatActivity {
     public Button btnRegister;
     public Button buttonSearch;
     public Button buttonSignUp;
+
+    //for recyclerView
+    public RecyclerView recyclerView;
+    public List<User> users = new ArrayList<>();
+    private UserAdapter adapter;
+
 
 //    public void register(View view){
 //        Intent goReg = new Intent(this, Register.class);
@@ -122,6 +134,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         goRegister();
+
+        //recyclerView setup
+        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+        adapter = new UserAdapter(getApplicationContext(), users);
+        recyclerView.setAdapter(adapter);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(MainActivity.this);
+        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setHasFixedSize(true);
     }
 
     /*
