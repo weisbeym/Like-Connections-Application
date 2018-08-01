@@ -64,8 +64,8 @@ public class User {
     private int userID;
     @ColumnInfo (name = "emailAddress")
     private String emailAddress;
-    @ColumnInfo (name = "interests")
-    private Set<Interest> interests;
+    //@ColumnInfo (name = "interests")
+    //private Set<Interest> interests;
 
     public String getUserName() {
         return userName;
@@ -99,12 +99,12 @@ public class User {
         this.emailAddress = emailAddress;
     }
 
-    public Set<Interest> getInterests() {
-        return interests;
-    }
-
-    public void setInterests(Interest interest) {
-        interests.add(interest);
-    }
+//    public Set<Interest> getInterests() {
+//        return interests;
+//    }
+//
+//    public void setInterests(Interest interest) {
+//        interests.add(interest);
+//    }
 
 }

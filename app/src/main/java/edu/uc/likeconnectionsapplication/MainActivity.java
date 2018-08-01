@@ -41,13 +41,13 @@ public class MainActivity extends AppCompatActivity {
 //    }
 
     public void goRegister() {
-        buttonSignUp = (Button) findViewById(R.id.btnSignUp);
-        buttonSignUp.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                //to be made
-                //insertData();
-            }
-        });
+//        buttonSignUp = (Button) findViewById(R.id.btnSignUp);
+//        buttonSignUp.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View v) {
+//                //to be made
+//                //insertData();
+//            }
+//        });
 
         buttonSearch = (Button) findViewById(R.id.buttonSearch);
         buttonSearch.setOnClickListener(new View.OnClickListener() {
@@ -132,7 +132,7 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-        goRegister();
+        //goRegister();
 
         //recyclerView setup
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);

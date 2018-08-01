@@ -24,11 +24,11 @@ public interface UserDao {
 
     @Query("SELECT * FROM users WHERE first_name LIKE :first AND "
             + "last_name LIKE :last LIMIT 1")
-    User findByName(String userName) throws Exception;
+    public User findByName(String userName) throws Exception;
 
     @Insert
-    void insertAll(User... users) throws Exception;
+    public void insertAll(User... users) throws Exception;
 
     @Delete
-    void delete(User user);
+    public void delete(User user);
 }
