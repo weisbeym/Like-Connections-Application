@@ -11,11 +11,11 @@
 
     <AutoCompleteTextView
         android:id="@+id/autoCompleteTextView2"
-        android:layout_width="0dp"
+        android:layout_width="278dp"
         android:layout_height="40dp"
         android:layout_marginEnd="6dp"
         android:layout_marginStart="14dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:hint="@string/search_an_interest"
         app:layout_constraintEnd_toStartOf="@+id/buttonSearch"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,8 +49,8 @@
 
     <Button
         android:id="@+id/buttonSearch"
-        android:layout_width="57dp"
-        android:layout_height="41dp"
+        android:layout_width="79dp"
+        android:layout_height="47dp"
         android:layout_marginEnd="8dp"
         android:layout_marginTop="8dp"
         android:text="@string/go"
